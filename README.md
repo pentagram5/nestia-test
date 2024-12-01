@@ -163,11 +163,10 @@ createItemsClassValidator(@Body() body: CreateItemsDto): string {
 - 각 컨트롤러에 1000개의 유저가 5번의 루프카운트 동안 요청을 하도록 스레드 프로퍼티를 설정을 하고, TPS를 비교해보았습니다.
 ### test 환경
   - 운영 체제
-    - macOS Monterey 12.3
+    - macOS Sequoia 12.3
   - 하드웨어 사양
     - **CPU**: Apple M1 Chip (8-core)
     - **RAM**: 16GB Unified Memory
-    - **디스크**: 250GB SSD
 ### 데이터 예시
 - JSON 직렬화, 각 배열의 값 검증의 부하를 주기 위해 아래와 같이 body에 데이터를 전달하도록 설정하였습니다.
 ~~~json
