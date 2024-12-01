@@ -41,8 +41,35 @@ export namespace IBbsArticle {
     title: string & tags.MinLength<3> & tags.MaxLength<50>;
     created_at: string & tags.Format<'date-time'>;
     /**
+     * 어쩌구 저쩌구
      * @format date-time
      */
-    updated_at: string;
+    updated_at: string & tags.Examples<any>;
   }
+}
+
+export interface IItem {
+  /**
+   * @minLength 1
+   * @maxLength 100
+   */
+  name: string;
+
+  /**
+   * @minimum 1
+   * @maximum 5000
+   * @example 5000
+   */
+  price?: number;
+
+  /**
+   * @format email
+   * @minLength 10
+   * @maxLength 100
+   */
+  email: string;
+}
+
+export interface ICreateItems {
+  items: IItem[];
 }
