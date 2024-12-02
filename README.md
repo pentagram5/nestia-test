@@ -82,7 +82,7 @@ export interface ICreateItems {
 ```
 - nestia는 typia를 활용해, pure TypeScript type 만을 활용해서 DTO를 정의할수 있습니다.
 - nestia의 validate 규칙은 주석 설명([typia](typia-comment tags 설명 기반))을 따릅니다.
-- 클래스가 아닌 인터페이스로 검증이 가능합니다.
+- typia 런타임 validate 를 활용하기 때문에 인터페이스에 typia 주석만 잘 작성하면 그대로 사용가능합니다.
 - 부트스트랩에서 Global Pipe를 넣을 필요도 없음!!! 
 
 ---
